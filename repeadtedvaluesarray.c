@@ -7,7 +7,7 @@ void findRepeatedValues(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         for (int j = i + 1; j < size; j++) {
             if (arr[i] == arr[j]) {
-                // Check if the value is already printed
+                
                 int alreadyPrinted = 0;
                 for (int k = 0; k < i; k++) {
                     if (arr[k] == arr[i]) {
@@ -19,7 +19,7 @@ void findRepeatedValues(int arr[], int size) {
                     printf("%d ", arr[i]);
                     foundRepeated = 1;
                 }
-                break; // Exit inner loop if a duplicate is found
+                break; 
             }
         }
     }
